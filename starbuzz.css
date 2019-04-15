@@ -7,30 +7,27 @@ body {
 
 #header {
   background-color: #675c47;
-  margin:           10px;
+  margin:           10px 10px 0px 10px;
   height:           108px;
 }
 
 #main {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
+  vertical-align: top;
+  width: 420px;
+  float: left;
 }
 
 #sidebar {
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 10px 10px 10px;
-  width: 280px;
-  float: right;
-
-  position: absolute;
-  top: 128px;
-  right: 0px;
-  width: 280px;
-
+  vertical-align: top;
+  margin: 0px 10px 10px 470px;
 }
 
 #footer {
@@ -38,10 +35,9 @@ body {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin:           10px;
+  margin:           0px 10px 10px 10px;
   font-size:        90%;
-  clear: right;
-
+  clear: left;
 }
 
 h1 {
@@ -67,32 +63,21 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
-#allcontent{
-  width: 800px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #675c47;
-  margin-left: auto;
-  margin-right: auto;
+#tableContainer{
+  display: table;
+  border-spacing: 10px;
 }
 
-#foo{
-  width: 200px;
-  height: 200px;
-  border: 1px blue solid;
-  position: absolute;
-  top: 0px;
-  left: 1000px;
-  z-index: 1;
+#tableRow{
+  display: table-row;
 }
 
-#eoo{
-  width: 200px;
-  height: 200px;
-  border: 3px pink solid;
-  position: absolute;
-  top: 0px;
-  left: 1000px;
-  z-index: 3;
-
-}
+#drinks{
+  display: table-cell;
+  background-color: #efe5d0;
+  width: 20%;
+  padding: 15px;
+  vertical-align: top;
+  width: 220px;
+  float: left;
+}  
