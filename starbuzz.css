@@ -80,4 +80,21 @@ a:visited {
   vertical-align: top;
   width: 220px;
   float: left;
-}  
+}
+
+.headerImageLeft{
+  display: inline-block;
+  float: left;
+  background-image: url(image/header.gif);
+  widows: 400px;
+  height: 100px;
+}
+
+.headerImageLeft{
+  display: inline-block;
+  float: right;
+  background-image: url(image/header.gif);
+  widows: 400px;
+  height: 100px;
+  background-position: -400px,0px;
+}
