@@ -1,0 +1,20 @@
+#foo{
+  width: 200px;
+  height: 200px;
+  border: 1px blue solid;
+  position: absolute;
+  top: 0px;
+  left: 1000px;
+  z-index: 1;
+}
+
+#eoo{
+  width: 200px;
+  height: 200px;
+  border: 3px pink solid;
+  position: absolute;
+  top: 0px;
+  left: 1000px;
+  z-index: 3;
+
+}
