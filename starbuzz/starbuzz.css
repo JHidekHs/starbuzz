@@ -11,7 +11,17 @@ header {
   height:           108px;
 }
 
-#main {
+header.top{
+  background-color: #675c47;
+  margin: 10px 10px 0px 10px;
+  height: 108px;
+}
+
+header.top img#headerSlogan{
+  float: right;
+}
+
+section#main, section#blog {
   display: table-cell;
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
@@ -59,15 +69,6 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 
-#allcontent{
-  width: 800px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #675c47;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 div#tableContainer{
   display: table;
   border-spacing: 10px;
@@ -77,7 +78,7 @@ div#tableRow{
   display: table-row;
 }
 
-#drinks{
+section#drinks{
   display: table-cell;
   background-color: #efe5d0;
   width: 20%;
@@ -89,19 +90,18 @@ div#tableRow{
   position: absolute;
   z-index: 2;
   display: inline-block;
-  float: left;
-  background-image: url(image/header.gif);
-  widows: 400px;
+  background-image: url(images/header.gif);
+  width: 400px;
   height: 100px;
 }
 
 .headerImageRight{
-  display: inline-block;
+  display: block;
   float: right;
-  background-image: url(image/header.gif);
-  widows: 400px;
+  background-image: url(images/header.gif);
+  width: 400px;
   height: 100px;
-  background-position: -400px,0px;
+  background-position: -400px 0px;
 }
 
 #award{
@@ -118,4 +118,31 @@ div#tableRow{
 
 #coupon a, img{
   border: none;
+}
+
+nav{
+  background-color: #efe5d0;
+  margin:10px 10px 0px 10px;
+}
+
+nav ul{
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+}
+
+nav ul li{
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+
+nav ul li a:link, nav u1 li a:visited{
+  color: #954b4b;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+nav ul li.selected{
+  background-color: #c8b99c;
 }
